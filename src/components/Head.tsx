@@ -2,11 +2,11 @@ import React from 'react';
 
 type HeadProps = {
   title: string;
-  isActive: boolean;
+  isActive?: boolean; // Optional
 }
 
 export const Head = (props: HeadProps) => {
-  const { title, isActive } = props;
+  const { title, isActive = false } = props;
 
   return (
     <div>
